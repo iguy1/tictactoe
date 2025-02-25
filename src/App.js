@@ -1,16 +1,16 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import GameFunction from './gameFunction';
+import TicTacToe from './gameFunction';
 
 
 function App(){
   return (
     <Router>
       <div className="App">
-        <h1></h1>
+        <h1>TicTacToe</h1>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<TicTacToe />} />
           {/* Add more routes here */}
         </Routes>
       </div>
